@@ -1,0 +1,394 @@
+/* Page Styling ------------------------------------------- */
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    opacity: 1;
+    transition: color 0.15s linear;
+    -o-transition: color 0.15s linear;
+    -moz-transition: color 0.15s linear;
+    -webkit-transition: color 0.15s linear;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+header, header a, header nav li:hover, header nav li.activelink, article p  {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+
+.webuild p, .cta p, .social p, footer p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}
+
+.webuild h1, .webuild a, .webuild a:hover, h2, h4, article h3, .cta h2, .moreprojects a, .cta a, .social a {
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.webuild h1, .webuild p, .webuild a:hover, h4, article figcaption p, .cta h2, .cta p, .cta a:hover, .social a {
+    color: #fff;
+}
+
+/* Header ------------------------------------------- */
+
+header {
+    background: #fff;
+    font-size: .8em;
+    color: #a3a3a3;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 67px;
+}
+
+header img {
+    background: #f63c3c;
+    padding: 10px 20px;
+    float: left;
+    height: 100%;
+    margin-left: 15%;
+}
+
+header img:hover {
+    background: #a3a3a3;
+}
+
+header a {
+    color: #a3a3a3;
+    padding: 23px 0px;
+}
+
+header nav a:hover, .activelink a {
+    color: #f63c3c;
+}
+
+header nav ul {
+    float: right;
+    margin-right: 15%;
+    line-height: 67px;
+}
+
+header nav li:hover, header nav li.activelink {
+    box-shadow: 0px -3px 0px #f63c3c inset;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* Hero ------------------------------------------- */
+
+.webuild {
+    background-image: url("../img/background.jpg");
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.webuild h1 {
+    text-align: center;
+    letter-spacing: .21em;
+    font-size: 5em;
+    line-height: 1.2;
+    display: block;
+    v
+}
+
+.hero li:not(.active) {
+    display: none;
+}
+
+.title {
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    padding-top: 18%;
+}
+
+.webuild p {
+    font-size: .8em;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5em;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.webuild a {
+    font-size: 1em;
+    padding: 7px 20px;
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 20%;
+    letter-spacing: .1em;
+    border: 1px solid #fff;
+}
+
+.webuild a:hover {
+    font-size: 1em;
+    padding: 7px 20px;
+    background: rgba(0, 0, 0, 0.0);
+    border: 1px solid #fff;
+}
+
+.webuild nav ul {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.webuild nav li {
+    background-color: #fff;
+    height: 3px;
+    width: 30px;
+    margin: 0 3px;
+    display: inline-block;
+}
+
+.webuild nav li:not(.activebutton) {
+    opacity: .4;
+}
+
+/* Projects ------------------------------------------- */
+
+h2 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+    margin: 2% 0;
+    letter-spacing: .1em;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: left;
+    width: 50%;
+}
+
+.left img {
+    width: 100%;
+    padding: 0 1% 0 2%;
+}
+
+.right img {
+    width: 100%;
+    padding: 0 2% 0 1%;
+}
+
+time {
+    display: block;
+}
+
+figure:hover figcaption {
+    display: block;
+}
+
+figure figcaption {
+    display: none;
+}
+
+h4 {
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: .2em;
+    margin-bottom: 50px;
+    margin-top: 19%;
+}
+
+article figcaption p {
+    letter-spacing: .1em;
+}
+
+.right figcaption {
+    position: absolute;
+    top: 0;
+    background-color: #f63c3c;
+    width: 97%;
+    margin: 0 2% 0 1%;
+    height: 100%;
+    border: 15px #352d2f solid;
+}
+
+.left figcaption {
+    position: absolute;
+    top: 0;
+    background-color: #f63c3c;
+    width: 97%;
+    margin: 0 1% 0 2%;
+    height: 100%;
+    border: 15px #352d2f solid;
+}
+
+figure {
+    position: relative;
+}
+
+article h3 {
+    font-size: 1.2em;
+    color: #000;
+    text-align: center;
+    margin: 2% 0 1% 0;
+    letter-spacing: .1em;
+}
+
+article p {
+    color: #555555;
+    font-size: .5em;
+    text-align: center;
+    margin: 2% auto 3.5%;
+    width: 55%;
+    line-height: 1.5em;
+}
+
+.moreprojects {
+    display: block;
+    text-align: center;
+}
+
+.moreprojects a {
+    font-size: 1em;
+    color: #f63c3c;
+    padding-bottom: 3px;
+    letter-spacing: .1em;
+    box-shadow: 0px -2px 0px #f63c3c inset;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.moreprojects a:hover {
+    opacity: .5;
+}
+
+/* Showcasing ------------------------------------------- */
+
+.cta {
+    width: 100%;
+    background-color: #f63c3c;
+    height: auto;
+    text-align: center;
+    margin-top: 4%;
+    display: block;
+}
+
+.cta h2 {
+    letter-spacing: .1em;
+    font-size: 1.5em;
+    margin: 35px 0 0 0;
+    display: inline-block;
+}
+
+.cta p {
+    font-size: .65em;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.cta a {
+    letter-spacing: .1em;
+    font-size: .7em;
+    color: #685157;
+    margin-top: 15px;
+    margin-bottom: 32px;
+    display: inline-block;
+    letter-spacing: .2em;
+    border: solid 1px #fff;
+    background: #fff;
+    padding: 7px 50px;
+}
+
+.cta a:hover {
+    border: solid 1px #fff;
+    background-color: #f63c3c;
+}
+
+.showcase {
+    background-color: #fafafa;
+    height: 440px;
+}
+
+/* Social ------------------------------------------- */
+
+.social h2 {
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 0px;
+}
+
+.social p {
+    font-size: .65em;
+    color: #555555;
+    margin: .5% 0 3% 15%;
+}
+
+.social a {
+    float: left;
+    width: 17.25%;
+    height: 135px;
+    background-color: #30282a;
+    margin: 0 .5%;
+    text-align: center;
+}
+
+.social a {
+    display: inline-block;
+    letter-spacing: .1em;
+    font-size: 1em;
+    letter-spacing: .2em;
+    vertical-align: middle;
+}
+
+.social a:hover {
+    opacity: .2;
+}
+
+.social ul {
+    margin: 0 14.5%;
+    width: 100%;
+}
+
+.social li a i {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 7px;
+    padding-top: 38px;
+}
+
+/* Footer ------------------------------------------- */
+
+footer {
+    background-color: #fff;
+    height: 45px;
+}
+
+footer p {
+    margin-left: 15%;
+    font-size: .5em;
+    color: #555;
+    margin-top: 30px;
+}
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
